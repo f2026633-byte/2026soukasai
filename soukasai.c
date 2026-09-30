@@ -21,7 +21,7 @@ int main(void){
         printf("\x1b[48;2;0;0;255m 　　　　　　");
     }
 
-    printf("この色を作ろう!");
+    printf("\x1b[m\nこの色を作ろう!\n");
 
 	printf("赤の輝度値を入力-->");
 	scanf("%d",&r);
@@ -30,18 +30,15 @@ int main(void){
 	printf("青の輝度値を入力-->");
 	scanf("%d",&b);
 
-	printf("\x1b[m\n");
-
-	printf("\x1b[48;2;%d;%d;%dm",r,g,b);
 	printf("君の入力した色\x1b[49m \x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",r,g,b,r,g,b);
 
 	return(0);
  
 }
 
-int \get\random(
+int GetRandom(
     int arg_min,
-    int arg_max,
+    int arg_max
 ){
-    return arg_min + (int)(rand()*(arg_max - arg_min + 1.0 ~ / ( 1.0 + RAD_MAX) );
+    return arg_min + (int)(rand()*(arg_max - arg_min + 1.0 ) / ( 1.0 + RAND_MAX) );
 }
