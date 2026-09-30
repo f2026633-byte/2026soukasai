@@ -11,7 +11,7 @@ int main(void){
 	int r,g,b;
 
     srand((unsigned int)time(NULL));
-    ran = GetRandom(1,3);
+    ran = GetRandom(1,6);
 
     if(ran == 1){
         printf("\x1b[48;2;255;0;0m 　　　　　　");
@@ -19,6 +19,12 @@ int main(void){
         printf("\x1b[48;2;0;255;0m 　　　　　　");
     } else if(ran == 3){
         printf("\x1b[48;2;0;0;255m 　　　　　　");
+    } else if(ran == 4){
+        printf("\x1b[48;2;255;255;0m 　　　　　　");
+    } else if(ran == 5){
+        printf("\x1b[48;2;255;0;255m 　　　　　　");
+    } else if(ran == 6){
+        printf("\x1b[48;2;0;255;255m 　　　　　　");
     }
 
     printf("\x1b[m\nこの色を作ろう!\n");
