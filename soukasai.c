@@ -36,6 +36,10 @@ int main(void){
 	printf("青の輝度値を入力-->");
 	scanf("%d",&b);
 
+    r = r * 2.55;
+    g = g * 2.55;
+    b = b * 2.55;
+
 	printf("君の入力した色\x1b[49m \x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",r,g,b,r,g,b);
 
 	return(0);
